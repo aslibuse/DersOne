@@ -84,6 +84,3 @@ name = 'omer'
 def deneme(name):
     return name
 # %%
-
-def denne():
-    return '12345'
