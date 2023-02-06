@@ -84,3 +84,89 @@ name = 'omer'
 def deneme(name):
     return name
 # %%
+# importing
+ import numpy as np 
+ 
+array = np.array([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]) 1*15 vector
+
+print(array.shape)
+
+a = array.reshape(3,5)
+print("shape": ,a.shape)
+print("dimension:", a.ndim)
+
+print("data type:",a.dtype.name)
+print("size:", a.size)
+
+print("type: ", type(a))
+
+array1 = np.array([[1,2,3,4],[5,6,7,8],[9,8,7,5]])
+
+zeros = np.zeros((3,4))
+
+zeros[0,0] = 5
+print(zeros)
+
+np.ones((3,4))
+
+np.empty((2,3))
+
+b = np.arrange(10,50,5)
+
+a = np.linspace(10,50,20)
+#%%
+a = np.array([1,2,3])
+b = np.array([4,5,6])
+
+print(a+b)
+print(a-b)
+print(a**2) #iki yıldız karesi demek
+print(np.sin(a))
+print(a<2)
+ a = np.array([[1,2,3],[4,5,6]])
+ b = np.array([[1,2,3],[4,5,6]])
+ # element wise prodcut
+ print(a*b)
+ # matrix prodcut
+ a.dot(b.T)
+ 
+ print(np.exp(a))
+
+ a = np.random.random((5,5))
+ 
+ print(a.sum())
+ print(a.max())
+ print(a.min())
+ 
+ print(a.sum(axis=0)) #axis 0 = kalınları topla
+ print(a.sum(axis=1)) # satırları toplar
+ 
+ print(np.sqrt(a)) #karekok
+ print(np.square(a)) #a**2
+ np.add(a,a)
+ #%%
+ import numpy as np
+ array = np.array(1,2,3,4,5,6,7) # vector dimension = 1
+ print(array[0])
+ # programlamada ilk baştakini yazdırır ama sondakini yazdırmaz
+ array[0:3]
+ reverse_array = array[::-1]
+ print(reverse_array)
+ 
+ array1 = np.array([[1,2,3,4,5],[6,7,8,9,10]])
+ print(array1[1,1])
+ print(array1[:,1])
+ print(array1[1,1:4])
+ print(array1[-1,:]) # son satır
+ print(array1[:,-1]) # son sütun
+ #%%
+ # shape manipulation
+ array = np.array([[1,2,3],[4,5,6],[7,8,9]])
+ # flatten
+ a = array.ravel() #sıraya koyar
+ array2 = a.reshape(3,3)
+ arrayT = array2.T
+ print(array.shape)
+ array5 = np.array([[1,2],[3,4],[4,5]])
+ array5.resize((2,3)) #size = yeni bir variable yapar ama shape direkt yapar
+ 
